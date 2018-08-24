@@ -42,6 +42,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
   user.associate = function(models) {
+    models.user.hasMany(models.bird);
     // associations can be defined here
   };
 
